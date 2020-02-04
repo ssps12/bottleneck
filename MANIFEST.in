@@ -2,6 +2,7 @@ include README.rst RELEASE.rst
 include LICENSE
 include Makefile tox.ini
 include pyproject.toml
+include pyproject-arm64.toml
 
 graft LICENSES
 
