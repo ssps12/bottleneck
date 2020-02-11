@@ -38,7 +38,7 @@ jobs:
                PYTHON_VERSION="3.7"
                PYTHON_ARCH="64"
                TEST_RUN="doc"   
-          ignore: 
+          exclude: 
             - pyproject.toml               
 
         # coverage
@@ -72,7 +72,7 @@ jobs:
           env: TEST_DEPS="numpy pytest hypothesis"
                PYTHON_VERSION="3.7"
                PYTHON_ARCH="64"
-          ignore: 
+          exclude: 
             - pyproject.toml
 
          # python 3.8 conda numpy
