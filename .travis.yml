@@ -37,9 +37,7 @@ jobs:
           env: TEST_DEPS="sphinx numpy numpydoc gitpython pytest hypothesis"
                PYTHON_VERSION="3.7"
                PYTHON_ARCH="64"
-               TEST_RUN="doc"   
-          exclude: 
-            - pyproject.toml               
+               TEST_RUN="doc"                
 
         # coverage
         - os: linux
@@ -72,8 +70,6 @@ jobs:
           env: TEST_DEPS="numpy pytest hypothesis"
                PYTHON_VERSION="3.7"
                PYTHON_ARCH="64"
-          exclude: 
-            - pyproject.toml
 
          # python 3.8 conda numpy
         - os: linux
