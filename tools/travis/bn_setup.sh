@@ -18,6 +18,7 @@ else
         ARCHIVE=`ls dist/*.tar.gz`
         pip install "${ARCHIVE[0]}"
     elif [ "${TEST_RUN}" != "coverage" ]; then
+        pip install --upgrade pip
         # CFLAGS gets ignored by PEP 518, so do coverage from inplace build
         pip install --user "."
     fi
